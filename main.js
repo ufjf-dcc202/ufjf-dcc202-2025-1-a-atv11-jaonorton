@@ -22,12 +22,9 @@ function atualizarLista() {
 }
 
 function adcionarItemNaLista() {
-    const novoItem = pEntrada.textContent.trim();
-    if (novoItem) {
-        adicionaNaLista(novoItem);
-        atualizarLista();
-        pEntrada.textContent = "";
-    }
+    adicionaNaLista(pEntrada.textContent);
+    pEntrada.textContent = '';
+    atualizarLista();
 }
 
 function limparItensDeLista() {
